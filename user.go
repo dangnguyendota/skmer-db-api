@@ -2,7 +2,7 @@ package casino_database
 
 import "github.com/google/uuid"
 
-type User struct {
+type SkmerUser struct {
 	Id uuid.UUID
 	Username string
 	DisplayName string

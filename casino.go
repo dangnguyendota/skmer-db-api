@@ -2,7 +2,7 @@ package casino_database
 
 import "github.com/google/uuid"
 
-type CasinoDatabase interface {
-	GetUserById(id uuid.UUID) User
-	UpdatePoint(id uuid.UUID, old, new int64) User
+type SkmerDB interface {
+	GetUserById(id uuid.UUID) SkmerUser
+	UpdateCoins(id uuid.UUID, oldCoins, newCoins int64) SkmerUser
 }
