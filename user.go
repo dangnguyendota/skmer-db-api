@@ -1,4 +1,4 @@
-package casino_database
+package skmerdb
 
 import "github.com/google/uuid"
 
