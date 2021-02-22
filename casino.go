@@ -7,7 +7,7 @@ type Game struct {
 	Code string
 }
 
-type GameCity struct {
+type City struct {
 	Name string
 	Code string
 	MinJoin int64
@@ -26,5 +26,5 @@ type SkmerDB interface {
 	// danh sách các game id phù hợp
 	GetAvailableGameIds() []Game
 	// danh sách các thành phố trong game
-	GetAvailableCities(gameId string) []GameCity
+	GetAvailableCities(gameId string) []City
 }
