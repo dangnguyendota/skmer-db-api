@@ -25,6 +25,6 @@ type SkmerDB interface {
 	UpdatePoint(id uuid.UUID, o, n int64) SkmerUser
 	// danh sách các game id phù hợp
 	GetAvailableGameIds() []Game
-	// danh sách các thành phố trong game
-	GetAvailableCities(gameId string) []City
+	// danh sách các thành phố
+	GetAvailableCities() []City
 }
