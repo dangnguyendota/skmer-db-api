@@ -3,17 +3,18 @@ package skmerdb
 import "github.com/google/uuid"
 
 type Game struct {
-	Name string
-	Code string
+	Name       string
+	Code       string
+	MaxPlayers int64
 }
 
 type City struct {
-	Name string
-	Code string
+	Name    string
+	Code    string
 	MinJoin int64
 	MaxJoin int64
-	MinBet int64
-	MaxBet int64
+	MinBet  int64
+	MaxBet  int64
 }
 
 type SkmerDB interface {
