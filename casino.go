@@ -6,6 +6,9 @@ type Game struct {
 	Name       string
 	Code       string
 	MaxPlayers int64
+	MinPlayers int64
+	MaxViewers int64
+	TickRate   int64
 }
 
 type City struct {
