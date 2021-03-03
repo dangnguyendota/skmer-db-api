@@ -24,7 +24,7 @@ type SkmerDB interface {
 	// Lấy SkmerUser theo id của tài khoản.
 	GetUserById(id uuid.UUID) SkmerUser
 	// xóa cache thông tin của người chơi
-	RemoveUserCache(id uuid.UUID) SkmerUser
+	RemoveUserCache(id uuid.UUID) error
 	// cập point của tài khoản sau đó trả về tài khoản sau khi cập nhật.
 	// o là số point cũ và n là số point mới.
 	// id là id của tài khoản.
